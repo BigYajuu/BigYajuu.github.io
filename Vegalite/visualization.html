@@ -10,9 +10,9 @@
   <script>
     const spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Total Plantation Area Per Prefecture of Japan",
-  "width": 400,
-  "height": 400,
+  "title": "Total Plantation Area Per Prefecture/Region of Japan, 2020",
+  "width": 600,
+  "height": 600,
   "projection": {"type": "equirectangular"},
   "data": {
     "url": "https://raw.githubusercontent.com/BigYajuu/fit3179-vegalite/main/Vegalite/map/ne_10m_JPN.topojson",
@@ -30,7 +30,7 @@
       }
     }
   ],
-  "mark": {"type": "geoshape"},
+  "mark": {"type": "geoshape", "stroke": "gray"},
   "encoding": {
     "color": {
       "field": "total_plant_area",
